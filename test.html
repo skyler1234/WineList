@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WineList</title>
+    <link rel= "stylesheet" type= "text/css" href="test.css">
+</head>
+<body>
+
+<h2>IUS Wine List</h2>
+
+<ul style="list-style-type:none">
+  <li id=0><img src="./img/S.png" width=20 px height= 88px/> IUS Shiraz</li><br>
+  <li id=1><img src="./img/CS.png" width=20 px height= 88px/> IUS Cabernet Shiraz</li><br>
+  <li id=2><img src="./img/CH.png" width=20 px height= 88px/> IUS Chardonnay</li><br>
+  <li id=3><img src="./img/ML.png" width=20 px height= 88px/> IUS Merlot</li><br>
+  <li id=4><img src="./img/MS.png" width=20 px height= 88px/> IUS Sauvignon Blanc</li><br>
+
+</ul>  
+
+<script>
+    var shiraz =document.getElementById(0);
+    var cshiraz =document.getElementById(1);
+    var char =document.getElementById(2);
+    var mer =document.getElementById(3);
+    var sauv =document.getElementById(4);
+
+    shiraz.addEventListener("click", display);
+    cshiraz.addEventListener("click", display);
+    char.addEventListener("click", display);
+    mer.addEventListener("click", display);
+    sauv.addEventListener("click", display);
+
+    function display(){
+        var WineID = +this.id
+        var List = ['IUS Shiraz: 832692','IUS Carbenet Shiraz: 749422', 'IUS Chardonnay: 374711', 'IUS Merlot: 333076', 'IUS Sauvignon Blanc: 208173']
+    alert(List[WineID])
+    };
+
+</script>
+
+</body>
+</html>
